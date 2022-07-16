@@ -15,8 +15,38 @@ some snippets for visual studio code
 
 ```
 html {
-    height: 100%
+    height: 100%;
 }
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+```
+| Prefix |
+| ------ |
+| `slot` |
+```
+<template #default="scope">
+    <span></span>
+</template>
 ```
 
 --------------------------------------
