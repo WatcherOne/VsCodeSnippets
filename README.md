@@ -60,6 +60,9 @@ ul {
 * pug(.pug)
 
 --------------------------------------
+##### 2022/07/16 (1.0.1)
+* updated more description and fixed some snippets
+
 ##### 2022/07/16 (1.0.0)
 * Frist version to try use
 
