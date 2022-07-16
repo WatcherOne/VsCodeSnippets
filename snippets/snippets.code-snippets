@@ -25,9 +25,85 @@
         "description": "create file's description for author,email,created"
     },
 
-    "vue2-file": {
+    "import": {
+        "prefix": "imp",
+        "body": "import ${2:moduleName} from '${1:module}'$0",
+        "description": "imports entrie module statement in ES6 syntax"
+    },
+
+    "importDestructing": {
+        "prefix": "imd",
+        "body": "import { $2 } from '${1:module}'$0",
+        "description": "imports entrie module statement in ES6 syntax"
+    },
+
+    "mapFunctionLine": {
+        "prefix": "map",
+        "body": ".map(${1:item} => $2)",
+        "description": "create a function of map in line"
+    },
+
+    "mapFunctionReturn": {
+        "prefix": "mapr",
+        "body": [
+            ".map(${1:item} => {",
+            "\t$0",
+            "})"
+        ],
+        "description": "create a function of map in next line"
+    },
+
+    "forEachLine": {
+        "prefix": "fre",
+        "body": ".forEach(${1:item} => $2)",
+        "description": "create a function of forEach in line"
+    },
+
+    "forEachReturn": {
+        "prefix": "frer",
+        "body": [
+            ".forEach(${1:item} => {",
+            "\t$0",
+            "})"
+        ],
+        "description": "create a function of forEach in next line"
+    },
+
+    "setTimeout": {
+        "prefix": "sett",
+        "body": [
+            "setTimeout(() => {",
+            "\t$2",
+            "}, ${1:0})$0"
+        ],
+        "description": "create setTimeout function"
+    },
+
+    "console": {
+        "prefix": "log",
+        "body": "console.log($1)$0",
+        "description": "write some log"
+    },
+
+    "arrowFunction": {
+        "prefix": "anfn",
+        "body": [
+            "(${1:params}) => {",
+            "\t$2",
+            "}"
+        ],
+        "description": "create an anonymous function in ES6 syntax"
+    },
+
+    "objectDeconstruction": {
+        "prefix": "deconst",
+        "body": "const { $2 } = ${1:this.}$0",
+        "description": "create deconstruction object"
+    },
+
+    "vue2-file-template": {
         "scope": "javascript,typescript,vue",
-        "prefix": "contruction",
+        "prefix": "contruct",
         "body": [
             "<template>",
             "\t<div class=\"$TM_FILENAME_BASE-container\">$1</div>",
@@ -43,5 +119,14 @@
             "</script>"
         ],
         "description": "create vue2 base file contrcution"
+    },
+
+    "default-slot": {
+        "prefix": "slot",
+        "body": [
+            "<template #default=\"scope\">",
+            "\t<${1:span}>$2</${1:span}>",
+            "</template>"
+        ]
     }
 }

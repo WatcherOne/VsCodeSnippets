@@ -8,6 +8,7 @@
         "url": "https://github.com/WatcherOne"
     },
     "publisher": "zhubo",
+    "icon": "images/logo.png",
     "version": "1.0.0",
     "keywords": [
         "VisualStudioCode",
@@ -37,11 +38,15 @@
                 "path": "./snippets/snippets.code-snippets"
             },
             {
+                "language": "typescript",
+                "path": "./snippets/snippets.code-snippets"
+            },
+            {
                 "language": "vue",
                 "path": "./snippets/snippets.code-snippets"
             },
             {
-                "language": "typescript",
+                "language": "html",
                 "path": "./snippets/snippets.code-snippets"
             }
         ]
