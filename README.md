@@ -7,6 +7,8 @@ some snippets for visual studio code
 [![](https://vsmarketplacebadge.apphb.com/version/hollowtree.vue-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=zhubo.zb-snippets)
 [![](https://vsmarketplacebadge.apphb.com/installs/hollowtree.vue-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=zhubo.zb-snippets)
 
+![snippets in action](images/cssSnippet.gif)
+![snippets in action](images/javascriptSnippet.gif)
 --------------------------------------
 
 | Prefix |
