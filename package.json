@@ -1,0 +1,32 @@
+{
+    "name": "zb-snippets",
+    "displayName": "zb-snippets",
+    "description": "some code snippets for visual studio code",
+    "author": {
+        "name": "watcher",
+        "email": "286154864@qq.com",
+        "url": "https://github.com/WatcherOne"
+    },
+    "publisher": "zhubo",
+    "version": "0.0.1",
+    "keywords": [
+        "javascripts",
+        "snippets",
+        "vue",
+        "css"
+    ],
+    "engines": {
+        "vscode": "^1.69.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}
