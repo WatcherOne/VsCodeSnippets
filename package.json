@@ -48,6 +48,10 @@
             {
                 "language": "html",
                 "path": "./snippets/snippets.code-snippets"
+            },
+            {
+                "language": "vue-html",
+                "path": "./snippets/snippets.code-snippets"
             }
         ]
     },
