@@ -13,7 +13,7 @@ some snippets for visual studio code
 
 | Prefix |
 | ------ |
-| `resetCss` |
+| `z-reset` |
 
 ```
 html {
@@ -44,7 +44,60 @@ ul {
 ```
 | Prefix |
 | ------ |
-| `slot` |
+| `z-desc` |
+```
+/*************************************************************
+ * Author: xxxxxxx
+ * Emails: <xxxxxxxx>
+ * CreateTime: -- ::
+ * Description: xxxxxxxxxxxxxx
+*************************************************************/
+```
+| Prefix |
+| ------ |
+| `z-map` |
+```
+.map(item => item.)
+```
+| Prefix |
+| ------ |
+| `z-mapr` |
+```
+.map(item => {
+    return item
+})
+```
+| Prefix |
+| ------ |
+| `z-fore` |
+```
+.forEach(item => {
+
+})
+```
+| Prefix |
+| ------ |
+| `z-settime` |
+```
+setTimeout(() => {
+    
+}, 0)
+```
+| Prefix |
+| ------ |
+| `z-settimel` |
+```
+setTimeout(() => console.log(1), 0)
+```
+| Prefix |
+| ------ |
+| `z-l` |
+```
+console.log(1)
+```
+| Prefix |
+| ------ |
+| `z-slot` |
 ```
 <template #default="scope">
     <span></span>
@@ -60,6 +113,9 @@ ul {
 * pug(.pug)
 
 --------------------------------------
+##### 2022/07/19 (2.0.0)
+* change snippets name and burst some module
+
 ##### 2022/07/16 (1.0.1)
 * updated more description and fixed some snippets
 

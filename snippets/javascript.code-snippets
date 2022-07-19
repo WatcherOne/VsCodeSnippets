@@ -1,0 +1,86 @@
+{
+    "import": {
+        "prefix": "z-imp",
+        "body": "import ${2:moduleName} from '${1:module}'$0",
+        "description": "import entrie module statement in ES6 syntax"
+    },
+
+    "importIdentifier": {
+        "prefix": "z-impd",
+        "body": "import { $2 } from '${1:module}'$0",
+        "description": "import entrie module statement in ES6 syntax"
+    },
+
+    "mapFunctionLine": {
+        "prefix": "z-map",
+        "body": "map(${1:item} => ${1:item}.$2)$0",
+        "description": "create a function of map in line"
+    },
+
+    "mapFunctionReturn": {
+        "prefix": "z-mapr",
+        "body": [
+            "map(${1:item} => {",
+            "\treturn ${1:item}$2",
+            "})$0"
+        ],
+        "description": "create a function of map in next line"
+    },
+
+    "forEachLine": {
+        "prefix": "z-fore",
+        "body": [
+            "forEach(${1:item} => {",
+            "\t$2",
+            "})$0"
+        ],
+        "description": "create a function of forEach in next line"
+    },
+
+    "setTimeout": {
+        "prefix": "z-settime",
+        "body": [
+            "setTimeout(() => {",
+            "\t$2",
+            "}, ${1:0})$0"
+        ],
+        "description": "create setTimeout function"
+    },
+
+    "setTimeout demo": {
+        "prefix": "z-settimel",
+        "body": "setTimeout(() => console.log(${2:1}), ${1:0})",
+        "description": "create setTimeout function to console.log(1)"
+    },
+
+    "console.log": {
+        "prefix": "z-l",
+        "body": "console.log(${1:1})$0",
+        "description": "create console log"
+    },
+
+    "createFunction": {
+        "prefix": "z-fn",
+        "body": [
+            "function ${1:fnName} (${2:params}) {",
+            "\t${3}",
+            "}$0"
+        ]
+    },
+
+    "arrowFunction": {
+        "prefix": "z-arrow",
+        "body": [
+            "(${1:params}) => {",
+            "\t$2",
+            "}$0"
+        ],
+        "description": "create an anonymous function in ES6 syntax"
+    },
+
+    "objectDeconstruction": {
+        "prefix": "z-const",
+        "body": "const { $3 } = ${1:this.}$2",
+        "description": "create deconstruction object"
+    }
+}

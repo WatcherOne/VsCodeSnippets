@@ -1,0 +1,31 @@
+{
+    "vue2-file-init": {
+        "scope": "javascript,typescript,vue",
+        "prefix": "z-init",
+        "body": [
+            "<template>",
+            "\t<div class=\"$TM_FILENAME_BASE-container\">$1</div>",
+            "</template>\n",
+            "<script>",
+            "export default {",
+            "\tname: '$TM_FILENAME_BASE',",
+            "\tdata() {",
+            "\t\treturn {$2}",
+            "\t},",
+            "\tmethods: {$0}",
+            "}",
+            "</script>"
+        ],
+        "description": "create vue2 base file contrcution"
+    },
+
+    "default-slot": {
+        "prefix": "z-slot",
+        "body": [
+            "<template #default=\"scope\">",
+            "\t<${1:span}>$2</${1:span}>",
+            "</template>"
+        ],
+        "description": "create default solt"
+    }
+}

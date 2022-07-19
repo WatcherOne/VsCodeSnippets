@@ -3,7 +3,7 @@
     // 自定义代码段的名称, 用于快速查询
     "resetCss": {
         // 用于触发sippet文本
-        "prefix": "resetCss",
+        "prefix": "z-reset",
         // body指定代码模块内容
         // 单个字符串或字符串数组
         // 如果 body 定义了 tabstops [用$0, $1, $2, ...标识], 可以通过 Tab 键 来使光标跳到特定位置, 方便修改生成的模板
